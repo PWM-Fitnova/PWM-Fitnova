@@ -18,22 +18,24 @@ nav a {
   text-decoration: none;
   color: #333;
 }
+
 .horizontal-filters {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  padding: 10px;
+  gap: 20px;
+  padding: 30px;
   background: #eaeaea;
 }
 .container {
   display: flex;
   margin: 20px;
-  /*text-align: center; */
+  text-align: center;
 }
 .sidebar {
-  width: 200px;
-  padding: 20px;
-  background: #eaeaea;
+  width: 300px;
+  padding: 10px;
+  background: #ffffff;
+  border: 3px solid #000000;
 }
 .content {
   flex: 1;
@@ -53,5 +55,6 @@ footer {
   padding: 20px;
   background: #f4f4f4;
   margin-top: 20px;
+  border: 3px solid #000000;
 }
 
