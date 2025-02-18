@@ -1,0 +1,65 @@
+.footer-logo img {
+    width: 60px;
+    height: 60px;
+    background-color: lightgray;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+article {
+    display: flex;
+    padding: 5px;
+}
+
+.footer-linked-elements {
+    padding: 10px;
+}
+
+#footer-tile {
+    font-size: 50px;
+    color: white;
+}
+
+.footer-linked-elements ul {
+    font-size: 18px;
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    padding: 0 20px;
+    margin: 0;
+    /* Evita márgenes adicionales */
+}
+
+ul li {
+    margin-bottom: 10px;
+    /* Añade espacio entre elementos */
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: black;
+}
+
+.footer-link:active {
+    color: red;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    padding: 20px;
+    background-color: #09372C;
+    gap: 80px;
+    /* Espacio entre la imagen y los enlaces */
+}
