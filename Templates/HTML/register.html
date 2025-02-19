@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="../CSS/register.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="login-container">
+            <label for="name">Name & surname</label>
+            <input type="text" id="name" name="name" placeholder="Add your full name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Add your email" required>
+            <label for="number">Number</label>
+            <input type="tel" id="number" name="number" placeholder="Add your number" required>
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday" required>
+            <fieldset>
+                <legend>Sex: </legend>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="sex" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="sex" value="female">
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="sex" value="other">
+            </fieldset>
+            <label for="country">Choose your country:</label>
+            <input list="country" name="browser" id="browser">
+            <datalist id="country">
+                <option value="Albania">
+                <option value="Andorra ">
+                <option value="Armenia">
+                <option value="Austria">
+                <option value="Azerbaijan">
+                <option value="Belarus">
+                <option value="Belgium">
+                <option value="Bosnia and Herzegovina ">
+                <option value="Bulgaria">
+                <option value="Croatia ">
+                <option value="Cyprus ">
+                <option value="Czech Republic">
+                <option value="Denmark">
+                <option value="Estonia">
+                <option value="Finland">
+                <option value="Former Yugoslav Republic of Macedonia">
+                <option value="France">
+                <option value="Georgia">
+                <option value="Germany">
+                <option value="Greece">
+                <option value="Hungary">
+                <option value="Iceland">
+                <option value="Ireland">
+                <option value="Italy">
+                <option value="Kosovo">
+                <option value="Latvia">
+                <option value="Liechtenstein">
+                <option value="Lithuania">
+                <option value="Luxembourg">
+                <option value="Malta">
+                <option value="Moldova">
+                <option value="Monaco">
+                <option value="Montenegro">
+                <option value="Netherlands">
+                <option value="Norway">
+                <option value="Poland">
+                <option value="Portugal">
+                <option value="Romania">
+                <option value="Russia">
+                <option value="San Marino">
+                <option value="Serbia">
+                <option value="Slovakia">
+                <option value="Slovenia">
+                <option value="Spain">
+                <option value="Sweden">
+                <option value="Sweden">
+                <option value="Switzerland">
+                <option value="Turkey">
+                <option value="Ukraine">
+                <option value="United Kingdom">
+            </datalist>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="email" placeholder="Add your password" required>
+            <button class="register">Register</button>
+        </div>
+        <button class="login">Login</button>
+    </div>
+</body>
+</html>
