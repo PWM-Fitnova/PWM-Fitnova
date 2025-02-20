@@ -28,15 +28,12 @@ article {
 .footer-linked-elements ul {
     font-size: 18px;
     list-style: none;
-    /* Elimina los puntos de la lista */
     padding: 0 20px;
     margin: 0;
-    /* Evita márgenes adicionales */
 }
 
 ul li {
     margin-bottom: 10px;
-    /* Añade espacio entre elementos */
 }
 
 .footer-link {
@@ -55,11 +52,8 @@ ul li {
 footer {
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
-    /* Centra verticalmente */
     padding: 20px;
     background-color: #09372C;
     gap: 80px;
-    /* Espacio entre la imagen y los enlaces */
 }
