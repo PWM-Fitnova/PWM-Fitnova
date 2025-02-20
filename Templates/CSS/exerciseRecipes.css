@@ -26,12 +26,24 @@ body {
 }
 
 .filter-box, .sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 8px 12px;
   border: 2px solid black;
   background: white;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
-  text-align: center;
+  text-align: left;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
 }
 
 .filter-box:hover, .sidebar-item:hover {
@@ -42,7 +54,7 @@ body {
 .sidebar {
   display: flex;
   flex-direction: column;
-  width: 180px;
+  width: 210px;
   padding: 20px;
   background: #ffffff;
   border: 2px solid #000000;
