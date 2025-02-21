@@ -30,7 +30,7 @@ body {
 .login-container {
     background: #111;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 50px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
     text-align: center;
     width: 100%;
@@ -51,7 +51,7 @@ input {
     padding: 15px;
     margin-top: 10px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 30px;
     border: 2px solid #555;
     background: #222;
     color: white;
@@ -84,7 +84,7 @@ button {
     background-color: #0A5E45;
     color: white;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 15px;
     transition: background 0.3s;
 }
 
@@ -92,19 +92,26 @@ button:hover {
     background-color: #088A68;
 }
 
+.login {
+    padding: 15px;
+    margin-top: 5px;
+    background-color: #0A5E45;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background 0.3s;
+    width: 50%;
+    font-size: 16px;
+    text-align: center;
+}
+
+login:hover {
+    background-color: #088A68;
+}
+
 button.register {
     width: 100%;
     font-size: 18px;
+    grid-area: register;
 }
 
-button.login {
-    bottom: 20px;
-    width: 150px;
-    font-size: 16px;
-    left: 50%;
-    background-color: #0A5E45;
-}
-
-button.login:hover {
-    background-color: #088A68;
-}

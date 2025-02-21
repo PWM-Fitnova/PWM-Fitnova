@@ -26,7 +26,7 @@ input {
     padding: 15px;
     margin-top: 5px;
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 30px;
     border: 2px solid #555;
     background: #222;
     color: white;
@@ -43,11 +43,27 @@ button {
     background-color: #0A5E45;
     color: white;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius:15px;
     transition: background 0.3s;
 }
 
-.create{
+.create_account{
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #0A5E45;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create_account:hover{
+    background-color: #088A68;
+}
+
+.create_account{
     width: 100%;
     font-size: 18px;
 }
@@ -55,11 +71,9 @@ button {
 .login{
     width:50%;
     font-size: 14px;
-    transform: translateX(50%); /*Centered button*/
+    transform: translateX(50%);
 }
 
 button:hover {
     background-color: #088A68;
 }
-
-

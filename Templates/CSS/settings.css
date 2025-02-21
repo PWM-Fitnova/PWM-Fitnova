@@ -41,7 +41,7 @@ label {
 input[list] {
     width: 100%;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 30px;
     border: 1px solid #555;
     background: #222;
     color: white;
@@ -64,7 +64,7 @@ input[type="radio"] {
     background-color: #0A5E45;
     color: white;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 15px;
     transition: background 0.3s;
 }
 
