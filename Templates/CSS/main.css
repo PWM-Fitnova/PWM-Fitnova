@@ -1,0 +1,59 @@
+body{
+    background-color: #071013
+}
+.main-image{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    height: 400px;
+    padding: 70px 100px;
+    margin: 20px;
+
+
+    background: radial-gradient(at 10% 60%,#082420 30%, #0A4B39);
+    color: white;
+
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.35);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 40px;
+
+    max-width: 350px; /* Define un ancho máximo */
+    word-wrap: break-word; /* Permite que el texto pase a otra línea si es necesario */
+    text-align: center;
+}
+.main-text{
+    text-align: center;
+    line-height: 1.8;
+    font-size: 17px;
+
+}
+.main-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+
+    background-color: rgb(0, 0, 0, 0.8);
+    color: #ffffff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.main-button:hover {
+    background: rgba(0, 0, 0, 0.9); /* Un poco más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Pequeño aumento de tamaño */
+}
