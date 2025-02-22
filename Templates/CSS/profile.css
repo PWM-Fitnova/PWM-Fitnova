@@ -3,13 +3,55 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 
     border-color: black;
     border-style: solid;
     border-width: 1px;
+    gap: 100px;
     margin: 10px;
+    padding: 20px;
+    background-color: #071013;
+
+}
+.user-profile-image{
+    background-color: gray;
 }
 .user-profile-options{
     display: flex;
 
+}
+.user-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    gap: 15px;
+    align-items: stretch;
+}
+.user-profile-card-button {
+    font-size: 20px;
+
+    --bg: #0A4B39;
+    --hover-bg: #0DAB76;
+    --hover-text: #FFF;
+    color: #fff;
+
+
+    background: var(--bg);
+    transition: 0.2s;
+
+    margin: 10px;
+    padding: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.user-profile-card-button:hover {
+
+    color: var(--hover-text);
+    transform: translate(-0.25rem, -0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+}
+.user-profile-card-button:active {
+    transform: translate(0);
+    box-shadow: none;
 }
