@@ -8,10 +8,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-article {
+.footer-article {
     display: flex;
     padding: 5px;
 }
@@ -21,18 +20,20 @@ article {
 }
 
 #footer-tile {
-    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 30px;
     color: white;
 }
 
 .footer-linked-elements ul {
-    font-size: 18px;
+    font-size: 15px;
     list-style: none;
     padding: 0 20px;
     margin: 0;
 }
 
-ul li {
+.footer-list-element {
     margin-bottom: 10px;
 }
 
@@ -49,11 +50,11 @@ ul li {
     color: red;
 }
 
-footer {
+.footer-template {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 0;
     background-color: #09372C;
     gap: 80px;
 }

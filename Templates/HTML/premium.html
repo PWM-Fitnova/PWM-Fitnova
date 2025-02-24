@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Fitnova</title>
+  <meta charset="UTF-8">
+  <title>Fitnova</title>
+  <script src="../JS/xlu-include-file.js"></script>
   <link rel="stylesheet" href="../CSS/styleReset.css">
   <link rel="stylesheet" href="../CSS/premium.css">
+  <link rel="stylesheet" href="../CSS/footer.css">
+  <link rel="stylesheet" href="../CSS/planTypes.css">
+  <link rel="stylesheet" href="../CSS/header.css">
 </head>
+
 <body>
+<header  xlu-include-file="header.html"></header>
+<main class="premium-content">
+  <div class="premium-carousel">
 
-  <main class="premium-content">
-    <div class="premium-carousel">
+  </div>
 
-    </div>
+  <div class="premium-table">
+    <table class="comparative-plan-table">
+      <thead class="comparative-plan-table-header">
+      <tr class="comparative-plan-table-row">
+        <th class="table-header-item">Features</th>
+        <th class="table-header-item">Basic Plan</th>
+        <th class="table-header-item">Standard Plan</th>
+        <th class="table-header-item">Premium Plan</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr class="comparative-plan-table-row">
+        <td class="table-first-row">Lorem Ipsum</td>
+        <td class="checkmark">✔</td>
+        <td class="checkmark">✔</td>
+        <td class="checkmark">✔</td>
+      </tr>
+      <tr>
+        <td class="table-first-row">dolor sit</td>
+        <td class="checkmark">✔</td>
+        <td class="checkmark">✔</td>
+        <td class="checkmark">✔</td>
+      </tr>
+      <tr>
+        <td class="table-first-row">amet consectetur</td>
+        <td class="cross-mark">✗</td>
+        <td class="checkmark">✔</td>
+        <td class="checkmark">✔</td>
+      </tr>
+      <tr>
+        <td class="table-first-row">adipiscing elit</td>
+        <td class="cross-mark">✗</td>
+        <td class="checkmark">✔</td>
+        <td class="checkmark">✔</td>
+      </tr>
+      <tr>
+        <td class="table-first-row">eros neque</td>
+        <td class="cross-mark">✗</td>
+        <td class="cross-mark">✗</td>
+        <td class="checkmark">✔</td>
+      </tr>
+      <tr>
+        <td class="table-first-row">sem vestibulum</td>
+        <td class="cross-mark">✗</td>
+        <td class="cross-mark">✗</td>
+        <td class="checkmark">✔</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 
-    <div class="premium-table">
-      <table class="comparative-plan-table">
-        <thead class="comparative-plan-table-header">
-        <tr class="comparative-plan-table-row">
-          <th class="table-header-item">Features</th>
-          <th class="table-header-item">Basic Plan</th>
-          <th class="table-header-item">Standard Plan</th>
-          <th class="table-header-item">Premium Plan</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="comparative-plan-table-row">
-          <td class="table-first-row">Lorem Ipsum</td>
-          <td class="checkmark">✔</td>
-          <td class="checkmark">✔</td>
-          <td class="checkmark">✔</td>
-        </tr>
-        <tr>
-          <td class="table-first-row">dolor sit</td>
-          <td class="checkmark">✔</td>
-          <td class="checkmark">✔</td>
-          <td class="checkmark">✔</td>
-        </tr>
-        <tr>
-          <td class="table-first-row">amet consectetur</td>
-          <td class="cross-mark">✗</td>
-          <td class="checkmark">✔</td>
-          <td class="checkmark">✔</td>
-        </tr>
-        <tr>
-          <td class="table-first-row">adipiscing elit</td>
-          <td class="cross-mark">✗</td>
-          <td class="checkmark">✔</td>
-          <td class="checkmark">✔</td>
-        </tr>
-        <tr>
-          <td class="table-first-row">eros neque</td>
-          <td class="cross-mark">✗</td>
-          <td class="cross-mark">✗</td>
-          <td class="checkmark">✔</td>
-        </tr>
-        <tr>
-          <td class="table-first-row">sem vestibulum</td>
-          <td class="cross-mark">✗</td>
-          <td class="cross-mark">✗</td>
-          <td class="checkmark">✔</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
+  <div xlu-include-file="planTypes.html"></div>
+</main>
+<footer xlu-include-file="footer.html"></footer>
+<script>
 
+  xLuIncludeFile();
 
+</script>
 </body>
 </html>

@@ -44,6 +44,15 @@
     text-align: center;
     text-decoration:none
 }
+.plan-button:hover{
+    transform: translate(-0.25rem, -0.25rem);
+    background: black;
+    box-shadow: 0.25rem 0.25rem #70757A;
+}
+.plan-button:active{
+    transform: translate(0);
+    box-shadow: none;
+}
 .unordered-text-list{
     display: flex;
     flex-direction: column;
