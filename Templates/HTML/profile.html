@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Fitnova</title>
+    <script src="../JS/xlu-include-file.js"></script>
     <link rel="stylesheet" href="../CSS/styleReset.css">
     <link rel="stylesheet" href="../CSS/profile.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
 </head>
 <body>
+    <header  xlu-include-file="header.html"></header>
+        <main class="container">
 
+            <section class="user-profile-image">
+                <img src="../../Images/DefaultImage.png" alt="">
+            </section>
 
-    <div class="container">
-
-        <section class="user-profile-image">
-            <img src="../../Images/DefaultImage.png" alt="">
-        </section>
-
-        <article class="user-profile-options">
-            <div class="user-profile-grid">
-                <button class="user-profile-card-button">Settings</button>
-                <button class="user-profile-card-button">Saved Recipes</button>
-                <button class="user-profile-card-button">Workout Progress</button>
-                <button class="user-profile-card-button">Profile</button>
-                <button class="user-profile-card-button">Posts</button>
-                <button class="user-profile-card-button">Log Out</button>
-            </div>
-        </article>
-
-    </div>
-
-
+            <article class="user-profile-options">
+                <div class="user-profile-grid">
+                    <button class="user-profile-card-button">Settings</button>
+                    <button class="user-profile-card-button">Saved Recipes</button>
+                    <button class="user-profile-card-button">Workout Progress</button>
+                    <button class="user-profile-card-button">Profile</button>
+                    <button class="user-profile-card-button">Posts</button>
+                    <button class="user-profile-card-button">Log Out</button>
+                </div>
+            </article>
+        </main>
+    <footer xlu-include-file="footer.html"></footer>
+    <script>
+    xLuIncludeFile();
+    </script>
 </body>
 </html>

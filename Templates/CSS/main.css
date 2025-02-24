@@ -1,6 +1,11 @@
 body{
     background-color: #071013
 }
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 .main-image{
 
     display: flex;
