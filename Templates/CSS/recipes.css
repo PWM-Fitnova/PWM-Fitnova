@@ -1,6 +1,10 @@
 .recipes-body {
     font-family: Arial, sans-serif;
 }
+.recipes-content{
+    display: block;
+    flex:1;
+}
 
 .container {
     display: flex;
