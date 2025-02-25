@@ -12,29 +12,29 @@
 
 .footer-article {
     display: flex;
-    padding: 5px;
+    padding: 2px;
 }
 
 .footer-linked-elements {
-    padding: 10px;
+    padding: 5px;
 }
 
 #footer-tile {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
     color: white;
 }
 
 .footer-linked-elements ul {
-    font-size: 15px;
+    font-size: 10px;
     list-style: none;
-    padding: 0 20px;
+    padding: 0 5px;
     margin: 0;
 }
 
 .footer-list-element {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .footer-link {
@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 20px 0;
+    padding: 5px 5px 0;
     background-color: #09372C;
     gap: 80px;
 }

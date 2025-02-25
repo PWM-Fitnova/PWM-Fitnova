@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+    <script src="../JS/xlu-include-file.js"></script>
+    <link rel="stylesheet" href="../CSS/styleReset.css">
     <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
 </head>
 <body>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Add your email" required>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="email" placeholder="Add your password" required>
-        <button class="login">Login</button>
-        <a href="register.html" class="create_account">Create an account</a>
-    </div>
+    <header xlu-include-file="header.html"></header>
+        <main class="login-container">
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Add your email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Add your password" required>
+                <button class="login">Login</button>
+                <a href="register.html" class="create_account">Create an account</a>
+            </div>
+        </main>
+    <footer xlu-include-file="footer.html"></footer>
+    <script src="../JS/xlu-include-file.js"></script>
+    <script>
+        xLuIncludeFile();
+    </script>
 </body>
 </html>

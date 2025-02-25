@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Delete</title>
+    <script src="../JS/xlu-include-file.js"></script>
     <link rel="stylesheet" href="../CSS/delete.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
 </head>
 <body>
-<div>
-    <div class="delete-cont">
-        <fieldset>
-            <legend>Are you sure to delete this account</legend>
-            <label for="yes">Yes</label>
-            <input type="radio" id="yes" name="notify" value="yes">
-            <label for="no">No</label>
-            <input type="radio" id="no" name="notify" value="no">
-        </fieldset>
-    </div>
-    <label for="password">Password</label>
-    <input type="password" id="password" name="email" placeholder="Add your password" required>
-    <button class="delete">Delete</button>
-</div>
-
+    <header xlu-include-file="header.html"></header>
+        <main class="delete-container">
+            <div>
+                <div class="delete-cont">
+                    <fieldset>
+                        <legend>Are you sure to delete this account</legend>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="notify" value="yes">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="notify" value="no">
+                    </fieldset>
+                </div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="email" placeholder="Add your password" required>
+                <button class="delete">Delete</button>
+            </div>
+        </main>
+    <footer xlu-include-file="footer.html"></footer>
+    <script src="../JS/xlu-include-file.js"></script>
+    <script>
+        xLuIncludeFile();
+    </script>
 </body>
 </html>
