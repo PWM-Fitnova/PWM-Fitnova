@@ -4,6 +4,9 @@
 .recipes-content{
     display: block;
     flex:1;
+    text-align: center;
+    background: #071013;
+    padding-bottom: 30px;
 }
 
 .container {
@@ -14,12 +17,15 @@
 }
 
 .horizontal-filters {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     gap: 10px;
-    padding: 15px;
-    background: #eaeaea;
+    padding: 10px;
     flex-wrap: wrap;
+    margin-top: 10px;
+    border-radius: 30px;
+    background: #09372C;
+
 }
 
 .filter-box, .sidebar-item {
@@ -28,11 +34,11 @@
     gap: 8px;
     padding: 8px 12px;
     border: 2px solid black;
-    background: white;
+    background: #B8BABD;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
     text-align: left;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .icon {
@@ -41,8 +47,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
 }
+
 
 .filter-box:hover, .sidebar-item:hover {
     background: #ddd;
@@ -53,8 +60,9 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background: #ffffff;
+    background: #09372C;
     border: 2px solid #000000;
+    border-radius: 30px;
     position: sticky;
     top: 0;
     justify-content: center;
@@ -77,8 +85,9 @@ h2 {
 
 .card {
     border: 2px solid black;
+    border-radius: 15px;
     padding: 10px;
-    background: white;
+    background: #B8BABD;
     text-align: center;
     position: relative;
 }
@@ -101,7 +110,7 @@ h2 {
     background: gray;
     color: white;
     padding: 3px 8px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
 }
