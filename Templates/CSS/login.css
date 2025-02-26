@@ -72,6 +72,7 @@ button {
     cursor: pointer;
     border-radius: 15px;
     transition: background 0.3s;
+    text-decoration: none;
 }
 
 button:hover {
@@ -89,6 +90,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 
 .create_account:hover {
@@ -98,6 +100,7 @@ button:hover {
 .create_account {
     width: 100%;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .login {
