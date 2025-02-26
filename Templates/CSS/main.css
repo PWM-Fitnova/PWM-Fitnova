@@ -1,10 +1,16 @@
-body{
-    background-color: #071013
+.main-body{
+    background-color: #071013;
+    display: flex;
+    flex:1;
+    gap:20px;
+
 }
 .content{
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+
 }
 .main-image{
 
@@ -16,9 +22,11 @@ body{
     height: 400px;
     padding: 70px 100px;
     margin: 20px;
+    border-radius: 25px;
 
 
     background: radial-gradient(at 10% 60%,#082420 30%, #0A4B39);
+
     color: white;
 
 }
@@ -30,8 +38,8 @@ body{
     border-radius: 10px;
     gap: 40px;
 
-    max-width: 350px; /* Define un ancho máximo */
-    word-wrap: break-word; /* Permite que el texto pase a otra línea si es necesario */
+    max-width: 350px;
+    word-wrap: break-word;
     text-align: center;
 }
 .main-text{
@@ -59,6 +67,6 @@ body{
 
 }
 .main-button:hover {
-    background: rgba(0, 0, 0, 0.9); /* Un poco más oscuro al pasar el cursor */
-    transform: scale(1.05); /* Pequeño aumento de tamaño */
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
 }

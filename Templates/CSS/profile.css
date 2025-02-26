@@ -1,17 +1,31 @@
-
+.profile-body{
+    background-color: #071013;
+}
 .container{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+}
+.profile-settings{
     flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 
+    margin: 170px;
     gap: 100px;
-    margin: 10px;
     padding: 25px;
+    border-radius: 35px;
+
+    background-color: rgb(10, 75, 57,0.18);
+    box-shadow: 0 15px 30px rgba(13, 171, 118, 0.6);
+    border: 2px solid rgba(13, 171, 118, 0.6);
+
 }
 .user-profile-image{
     background-color: gray;
+    border-radius: 15px;
 }
 .user-profile-options{
     display: flex;
@@ -37,7 +51,7 @@
     margin: 10px;
     padding: 25px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 2px 2px 8px #0DAB76;
 }
 .user-profile-card-button:hover {
