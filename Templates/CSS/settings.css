@@ -12,9 +12,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh; /
     padding: 20px;
 }
+
 
 
 .cont {
@@ -23,18 +24,18 @@ body {
     margin: 10px;
     width: 100%;
     max-width: 400px;
-    border-radius: 12px;
+    border-radius: 15px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 fieldset {
     border: 2px solid #111;
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 15px;
 }
 
 label {
-    font-size: 16px;
+    font-size: 18px;
     margin-right: 10px;
 }
 
@@ -47,18 +48,14 @@ input[list] {
     color: white;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-    transform: scale(1.2);
-    margin-right: 5px;
-}
-
 .contr {
     margin-top: 20px;
 }
 
-
 .delete-button {
+    display: block;
+    width: 100%;
+    text-align: center;
     padding: 12px;
     margin-top: 20px;
     background-color: #0A5E45;
@@ -66,10 +63,60 @@ input[type="radio"] {
     cursor: pointer;
     border-radius: 15px;
     transition: background 0.3s;
+    text-decoration: none;
 }
+
 
 .delete-button:hover {
     background-color: #088A68;
 }
+
+header, footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main.setting-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.setting-container div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+    max-width: 400px;
+    background: #111111;
+    border-radius: 12px;
+    text-align: center;
+}
+
+footer {
+    background-color: #09372C;
+    margin-top: 20px;
+}
+
+.footer-template {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    max-width: 100vw;
+}
+
+
+
+
+
 
 

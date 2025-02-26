@@ -3,41 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Settings</title>
+    <script src="../JS/xlu-include-file.js"></script>
     <link rel="stylesheet" href="../CSS/settings.css">
 </head>
 <body>
-    <div class="cont">
-        <label class="mode-label">Dark Mode</label>
-        <input type="checkbox" id="dark-mode" class="mode">
-    </div>
-    <div class="cont">
-        <fieldset>
-            <legend>Profile</legend>
-            <label for="public">Public</label>
-            <input type="radio" id="public" name="profile" value="public">
-            <label for="private">Private</label>
-            <input type="radio" id="private" name="profile" value="private">
-        </fieldset>
-    </div>
-    <div class="cont">
-        <fieldset>
-            <legend>Email notification</legend>
-            <label for="yes">Yes</label>
-            <input type="radio" id="no" name="notify" value="yes">
-            <label for="no">No</label>
-            <input type="radio" id="yes" name="notify" value="no">
-        </fieldset>
-    </div>
-    <div class="cont">
-        <label for="language">Choose your language:</label>
-        <input list="language" name="language" id="langu">
-        <datalist id="language">
-            <option value="Spanish">
-            <option value="English ">
-        </datalist>
-    </div>
-    <div class="but">
-        <a href="delete.html" class="delete-button">Delete Account</a>
-    </div>
+    <header xlu-include-file="header.html"></header>
+        <main class="setting-container">
+            <div class="cont">
+                <label class="mode-label">Dark Mode</label>
+                <input type="checkbox" id="dark-mode" class="mode">
+            </div>
+            <div class="cont">
+                <fieldset>
+                    <legend>Profile</legend>
+                    <label for="public">Public</label>
+                    <input type="radio" id="public" name="profile" value="public">
+                    <label for="private">Private</label>
+                    <input type="radio" id="private" name="profile" value="private">
+                </fieldset>
+            </div>
+            <div class="cont">
+                <fieldset>
+                    <legend>Email notification</legend>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="notify" value="yes">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="notify" value="no">
+                </fieldset>
+            </div>
+            <div class="cont">
+                <label for="language">Choose your language:</label>
+                <input list="language" name="language" id="langu">
+                <datalist id="language">
+                    <option value="Spanish">
+                    <option value="English ">
+                </datalist>
+            </div>
+            <div class="but">
+                <a href="delete.html" class="delete-button">Delete Account</a>
+            </div>
+        </main>
+    <footer xlu-include-file="footer.html"></footer>
+    <script src="../JS/xlu-include-file.js"></script>
+    <script>
+        xLuIncludeFile();
+    </script>
 </body>
 </html>
