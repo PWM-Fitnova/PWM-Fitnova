@@ -39,11 +39,17 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 10px;
-    text-decoration: none;
 }
 
 button:hover {
     background-color: #088A68;
+}
+.header-link{
+    color: white;
+    text-decoration: none;
+}
+.header-link:active {
+    color: black;
 }
 
 
