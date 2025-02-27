@@ -11,11 +11,11 @@
     gap: 20px;
     padding: 20px;
     margin: 30px;
-
 }
 
 .premium-table {
-    width: 80%;
+    width: 90%;
+    max-width: 800px;
 }
 
 .comparative-plan-table {

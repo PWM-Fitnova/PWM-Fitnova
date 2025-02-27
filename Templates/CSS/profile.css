@@ -1,67 +1,91 @@
-.profile-body{
+.profile-body {
     background-color: #071013;
-}
-.container{
     display: flex;
-    flex-direction: row;
-    flex:1;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.profile-settings{
+
+.container {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-settings {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    margin: 170px;
-    gap: 100px;
-    padding: 25px;
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
     border-radius: 35px;
-
-    background-color: rgb(10, 75, 57,0.18);
+    background-color: rgba(10, 75, 57, 0.18);
     box-shadow: 0 15px 30px rgba(13, 171, 118, 0.6);
     border: 2px solid rgba(13, 171, 118, 0.6);
-
+    gap: 30px;
 }
-.user-profile-image{
+
+.user-profile-image {
     background-color: gray;
     border-radius: 15px;
-}
-.user-profile-options{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.user-profile-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.user-profile-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .user-profile-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    align-items: stretch;
+    width: 100%;
+    max-width: 500px;
 }
+
 .user-profile-card-button {
-    font-size: 25px;
-
-    --bg: #0A4B39;
-    --hover-bg: #0DAB76;
-    --hover-text: #FFF;
-    color: #fff;
-
-
-    background: var(--bg);
-    transition: 0.2s;
-
-    margin: 10px;
-    padding: 25px;
+    font-size: 16px;
+    padding: 12px;
+    margin: 5px;
     border: 1px solid black;
     border-radius: 15px;
+    background: #0A4B39;
+    color: white;
     box-shadow: 2px 2px 8px #0DAB76;
+    transition: 0.2s;
 }
-.user-profile-card-button:hover {
 
-    color: var(--hover-text);
+.user-profile-card-button:hover {
+    background: #0DAB76;
+    color: #FFF;
     transform: translate(-0.25rem, -0.25rem);
-    background: var(--hover-bg);
-    box-shadow: 0.25rem 0.25rem var(--bg);
 }
+
 .user-profile-card-button:active {
     transform: translate(0);
     box-shadow: none;
+}
+
+header, footer {
+    width: 100%;
 }
