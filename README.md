@@ -3,9 +3,9 @@
 </a>
 <h1>Fitnova</h1>
 <h2>
-Joel Santana Alemán 
-Raúl Trejo González
-Daniel Moreno López
+<p>Joel Santana Alemán </p>
+<p>Raúl Trejo González</p>
+<p>Daniel Moreno López</p>
 </h2>
 Fitnova es una plataforma web diseñada para ayudar a los usuarios a llevar un estilo de vida saludable combinando entrenamiento y nutrición. 
 Ofrecemos herramientas personalizadas como recetas fitness, planificación nutricional y seguimiento del progreso físico.
