@@ -36,7 +36,20 @@ Ofrecemos herramientas personalizadas como recetas fitness, planificación nutri
   <li>register.html ➡ Implementa register.jpg</li>
   <li>payment.html ➡ Implementa payment.jpg</li>
   <li>settings.html ➡ Implementa settings.jpg</li>
+  <li>delete.html ➡ Implementa Delete.jpg</li>
 </ul>
+<h3>
+  Templates del Proyecto
+</h3>
+<ul>
+  <li>header.html (Está en todas las páginas)</li>
+  <li>footer.html (Está en todas las páginas)</li>
+  <li>planTypes.html ➡ Implementa el index.jpg y premium.jpg</li>
+  <li>detailsWorkoutRecipe.html ➡ Implementa PostView_page.jpg </li>
+  <li>exercisesRecipeCard.html ➡Se usará más adelante para el recipes.html y exercises.html</li>
+  <li>savedRecipesWorkoutsProgress.html ➡ Se usará en el futuro para las páginas de saved y post</li>
+</ul>
+
 <h3>
   Enlaces Figma y Trello
 </h3>
@@ -45,5 +58,3 @@ Ofrecemos herramientas personalizadas como recetas fitness, planificación nutri
   <br>
 <a href="https://trello.com/invite/b/67c0a115f6554ca4c0bd5e7e/ATTI31645448880685b61b1a17bff4e61b126F26F106/pwm-fitnova">Trello</a>
 </p>
-
-
