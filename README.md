@@ -41,7 +41,7 @@ Ofrecemos herramientas personalizadas como recetas fitness, planificación nutri
   Enlaces Figa y Trello
 </h3>
 <p>
-<a href="">Figma</a>
+<a href="https://www.figma.com/board/7Z4HVWelwCa73XyEUTJWvH/PWM-43.3-GYM?node-id=0-1&t=8lz1Hp65xpLVgw1e-1">"Figma"</a>
   <br>
 <a href="https://trello.com/invite/b/67c0a115f6554ca4c0bd5e7e/ATTI31645448880685b61b1a17bff4e61b126F26F106/pwm-fitnova">Trello</a>
 </p>
