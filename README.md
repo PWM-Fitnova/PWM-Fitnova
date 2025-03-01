@@ -38,7 +38,7 @@ Ofrecemos herramientas personalizadas como recetas fitness, planificación nutri
   <li>settings.html ➡ Implementa settings.jpg</li>
 </ul>
 <h3>
-  Enlaces Figa y Trello
+  Enlaces Figma y Trello
 </h3>
 <p>
 <a href="https://www.figma.com/board/7Z4HVWelwCa73XyEUTJWvH/PWM-43.3-GYM?node-id=0-1&t=8lz1Hp65xpLVgw1e-1">Figma</a>
