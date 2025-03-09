@@ -148,3 +148,40 @@ h2 {
   transform: scale(1.03);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    flex-direction: row;
+    margin: 10px;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    width: 25%;
+  }
+
+  .content {
+    width: 75%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  .card-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #ddd;
+    border-bottom: 2px solid black;
+  }
+
+  .card-title {
+    font-size: 14px;
+    padding: 8px 5px;
+  }
+}
