@@ -4,7 +4,10 @@
 }
 
 .container {
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     flex: 1;
 
 }
@@ -14,9 +17,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 170px;
+
     gap: 100px;
-    padding: 25px;
+    padding: 35px 70px;
     border-radius: 35px;
     background-color: rgb(10, 75, 57, 0.18);
     box-shadow: 0 15px 30px rgba(13, 171, 118, 0.6);
@@ -27,13 +30,16 @@
 .user-profile-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(min-content, 1fr));
-    gap: 15px;
-    align-items: stretch;
+    gap: 30px;
+
 }
 
 .user-profile-card-button {
-    font-size: 16px;
+    font-size: 1.1vw;
+
     padding: 12px;
+    min-width: 14vw;
+    min-height: 6vw;
     margin: 5px;
     border: 1px solid black;
     border-radius: 15px;
@@ -54,3 +60,11 @@
     box-shadow: none;
 }
 
+@media screen and (max-width: 1024px){
+    .user-profile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+        gap: 30px;
+
+    }
+}
