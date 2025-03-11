@@ -22,7 +22,7 @@
   margin-top: 10px;
   border-radius: 30px;
   background: #09372C;
-
+  border: 2px solid black;
 }
 
 .filter-box, .sidebar-item {
@@ -62,7 +62,7 @@
   position: sticky;
   top: 0;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .content {
@@ -185,3 +185,130 @@ h2 {
     padding: 8px 5px;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .exercise-content {
+    padding-bottom: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .horizontal-filters {
+    width: 90%;
+    padding: 8px;
+    gap: 8px;
+    flex-wrap: nowrap;
+    margin: 10px auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-box {
+    padding: 6px 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .filter-box .filter-text {
+    display: none;
+  }
+
+  .filter-box::after {
+    content: attr(data-short);
+    font-size: 14px;
+  }
+
+  .sidebar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 10px;
+    max-width: 320px;
+    justify-content: center;
+    position: static;
+    background: #09372C;
+    border-radius: 15px;
+  }
+
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    background: #b8babd;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    gap: 8px;
+    white-space: nowrap;
+    text-align: center;
+    min-width: 120px;
+  }
+
+  .sidebar-item .icon {
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .content {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card {
+    padding: 6px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card-image {
+    height: auto;
+    aspect-ratio: 16/9;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .card-title {
+    padding: 6px;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  .card-label {
+    font-size: 11px;
+    padding: 2px 5px;
+    top: 3px;
+    left: 3px;
+    border-radius: 3px;
+  }
+
+  .card-icon {
+    width: 16px;
+    height: 16px;
+    bottom: 8px;
+    right: 8px;
+  }
+}
+
