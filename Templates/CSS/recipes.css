@@ -73,12 +73,14 @@
 
 h2 {
     margin-bottom: 15px;
+    color: #B8BABD;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
+    margin-top: 10px;
 }
 
 .card-link {
