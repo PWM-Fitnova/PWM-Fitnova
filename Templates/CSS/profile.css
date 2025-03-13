@@ -27,10 +27,13 @@
 }
 
 
+
+
 .user-profile-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(min-content, 1fr));
     gap: 30px;
+    width: 100%;
 
 }
 
@@ -60,11 +63,34 @@
     box-shadow: none;
 }
 
-@media screen and (max-width: 1024px){
+
+@media screen and (min-width: 431px) and (max-width: 1024px) {
     .user-profile-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(min-content, 1fr));
         gap: 30px;
+
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .profile-settings {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+    .user-profile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+        gap: 15px;
+
+    }
+    .user-profile-image img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .user-profile-card-button {
+        border-radius: 10px;
 
     }
 }

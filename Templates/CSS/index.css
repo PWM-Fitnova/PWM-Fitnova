@@ -70,3 +70,24 @@
     background: rgba(0, 0, 0, 0.9);
     transform: scale(1.05);
 }
+
+
+@media screen and (max-width: 430px) {
+    .main-image{
+        padding: 10px;
+    }
+    .main-content{
+        padding: 10px;
+        gap:15px;
+        max-width: 250px;
+    }
+    .main-text{
+        text-align: center;
+        line-height: 1.8;
+        font-size: 11px;
+
+    }
+    .main-button{
+        font-size: 13px;
+    }
+}

@@ -74,8 +74,15 @@
     font-size: 24px;
     font-weight: bold;
 }
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 431px) and (max-width: 1024px) {
     .container{
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .container{
+        padding: 15px 15px;
         gap: 20px;
         flex-direction: column;
     }
