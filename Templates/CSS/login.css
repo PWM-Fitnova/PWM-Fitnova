@@ -107,3 +107,33 @@ button:hover {
     width: 50%;
     font-size: 14px;
 }
+
+@media (max-width: 430px) {
+    body {
+        font-size: 20px;
+    }
+
+    .login-container div {
+        max-width: 50%;
+        padding: 40px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    input {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    button, .create_account {
+        padding: 18px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .login {
+        width: 90%;
+        font-size: 20px;
+    }
+}
