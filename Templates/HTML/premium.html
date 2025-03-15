@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fitnova</title>
-  <script src="../JS/xlu-include-file.js"></script>
+  <script src="../JS/Loader.js"></script>
   <link rel="stylesheet" href="../CSS/styleReset.css">
   <link rel="stylesheet" href="../CSS/premium.css">
 </head>
 
 <body class="premium-body">
-<header  xlu-include-file="header.html"></header>
+<header  id="header"></header>
 <main class="premium-content">
   <div class="premium-carousel"></div>
 
-  <div class="premium-table" xlu-include-file="planTypes.html"></div>
+  <div class="premium-table" id="planTypes"></div>
 
   <div class="premium-table">
     <table class="comparative-plan-table">
@@ -69,11 +69,11 @@
 
 
 </main>
-<footer xlu-include-file="footer.html"></footer>
+<footer id="footer"></footer>
+
 <script>
-
-  xLuIncludeFile();
-
+  loadPlanTypes();
 </script>
+
 </body>
 </html>

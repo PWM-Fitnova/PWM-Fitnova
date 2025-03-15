@@ -22,6 +22,10 @@ function loadHeaderFooter(){
     loadTemplate("footer", "../HTML/footer.html");
 }
 
+function loadPlanTypes(){
+    loadTemplate("planTypes", "../HTML/planTypes.html");
+}
+
 function loadIndex(){
 
         loadTemplate("planTypes", "../HTML/planTypes.html");
