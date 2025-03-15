@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitnova</title>
-    <script src="../JS/xlu-include-file.js"></script>
+    <script src="../JS/Loader.js"></script>
     <link rel="stylesheet" href="../CSS/styleReset.css">
     <link rel="stylesheet" href="../CSS/profile.css">
 </head>
 <body class="profile-body">
-    <header  xlu-include-file="header.html"></header>
+    <header  id="header"></header>
         <main class="container">
             <div class="profile-settings">
             <section class="user-profile-image">
                 <img class="user-profile-image" src="../../Images/DefaultImage.png" alt="">
             </section>
-
             <article class="user-profile-options">
                 <div class="user-profile-grid">
                     <button class="user-profile-card-button" onclick="window.location.href='settings.html'">Settings</button>
@@ -28,9 +27,6 @@
             </article>
             </div>
         </main>
-    <footer xlu-include-file="footer.html"></footer>
-    <script>
-    xLuIncludeFile();
-    </script>
+    <footer id="footer"></footer>
 </body>
 </html>

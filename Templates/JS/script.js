@@ -1,15 +1,4 @@
-const loadDescription = () =>{
-    fetch("../JsonFiles/indexDescription.json")
-    .then(response => {
-        if(!response.ok){
-            throw new Error("Failed to load description");
-        }
-        return response.json();
-    })
-    .then(data => {
-        document.getElementsByClassName('main-description')[0].textContent = data.description;
-    })
-}
+
 
 function changePassword(buttonId, campId, property, userId, user) {
     const button = document.querySelector(buttonId);
@@ -34,3 +23,4 @@ function changePassword(buttonId, campId, property, userId, user) {
         //sendUpdate(/users/${userId}, data, userId);
     });
 }
+

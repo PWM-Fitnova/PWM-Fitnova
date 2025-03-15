@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>FitNova</title>
-    <script src="../JS/xlu-include-file.js"></script>
-    <script src="../JS/script.js"></script>
+    <script src="../JS/Loader.js"></script>
     <link rel="stylesheet" href="../CSS/styleReset.css">
     <link rel="stylesheet" href="../CSS/index.css">
 
 </head>
 <body class="main-body">
-    <header  xlu-include-file="header.html"></header>
+    <header  id="header"></header>
     <main class="content">
         <section class="main-image">
             <div class="main-content">
@@ -20,16 +19,13 @@
                 <button class="main-button" >Join Now >></button>
             </div>
         </section>
-        <div xlu-include-file="planTypes.html"></div>
+        <div id="planTypes"></div>
     </main>
 
-    <footer xlu-include-file="footer.html"></footer>
+    <footer id="footer"></footer>
+
     <script>
-
-        xLuIncludeFile();
-        loadDescription();
-
-
+        loadIndex();
     </script>
 </body>
 </html>
