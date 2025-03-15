@@ -161,4 +161,61 @@ footer {
     max-width: 100vw;
 }
 
+@media screen and (max-width: 430px) {
+    body {
+        font-size: 20px;
+    }
 
+    .login-container div {
+        max-width: 70%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    input {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    button, .create_account {
+        padding: 18px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .login {
+        width: 90%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 432px) and (max-width: 1024px) {
+    body {
+        font-size: 22px; /* Aumentamos el tamaño de texto */
+    }
+
+    .login-container div {
+        max-width: 600px; /* Hacemos el div más grande */
+        padding: 40px;
+    }
+
+    input {
+        padding: 22px;
+        font-size: 22px;
+    }
+
+    button, .create_account {
+        padding: 20px;
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .login {
+        width: 80%;
+        font-size: 22px;
+    }
+
+
+}

@@ -23,4 +23,3 @@ function changePassword(buttonId, campId, property, userId, user) {
         //sendUpdate(/users/${userId}, data, userId);
     });
 }
-
