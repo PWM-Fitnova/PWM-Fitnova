@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /
+    min-height: 100vh;
     padding: 20px;
 }
 
@@ -113,8 +113,65 @@ footer {
     width: 100%;
     max-width: 100vw;
 }
+@media screen and (max-width: 430px) {
+    body {
+        font-size: 20px;
+    }
 
+    .setting-container main {
+        max-width: 60%;
+        padding: 15px;
+    }
 
+    .cont {
+        padding: 25px;
+        font-size: 20px;
+        width: 70%;
+        max-width: 70%;
+    }
+
+    input {
+        padding: 18px;
+        font-size: 20px;
+        width: 70%;
+    }
+
+    .delete-button {
+        font-size: 20px;
+        padding: 18px;
+        width: 70%;
+    }
+
+    label {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 432px) and (max-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+
+    .setting-container main {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .cont {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    input {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .delete-button {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
 
 
 
