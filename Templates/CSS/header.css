@@ -1,4 +1,4 @@
-header {
+.header-2-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,6 +50,74 @@ button:hover {
 }
 .header-link:active {
     color: black;
+}
+
+@media (max-width: 431px) {
+    .header-2-container {
+        padding: 5px;
+        justify-content: space-between;
+        overflow: hidden;
+        flex-wrap: nowrap;
+    }
+
+    .left img,
+    .right img {
+        height: 35px;
+        width: 35px;
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    .right {
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 432px) and (max-width: 1024px) {
+    .header-2-container {
+        padding: 5px;
+        justify-content: space-between;
+        overflow: hidden;
+        flex-wrap: nowrap;
+    }
+
+    .left img,
+    .right img {
+        height: 35px;
+        width: 35px;
+        padding: 5px;
+    }
+
+    nav a {
+        font-size: 24px;
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px 12px;
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .right {
+        gap: 10px;
+    }
 }
 
 
