@@ -194,9 +194,4 @@ button:hover {
         font-size: 22px;
     }
 
-    .footer-template {
-        flex-direction: column;
-        gap: 40px;
-        padding: 30px;
-    }
 }

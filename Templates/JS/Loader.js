@@ -27,7 +27,6 @@ function loadPlanTypes(){
 }
 
 function loadIndex(){
-
         loadTemplate("planTypes", "../HTML/planTypes.html");
         loadDescription();
 
