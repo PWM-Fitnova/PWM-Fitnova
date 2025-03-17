@@ -1,0 +1,22 @@
+[
+  { "name": "Biceps Curl - Arms", "type": "Strength" },
+  { "name": "Lat Pulldown - Back", "type": "Hypertrophy" },
+  { "name": "Bench Press - Chest", "type": "Strength" },
+  { "name": "Deadlift - Full Body", "type": "Strength" },
+  { "name": "Squat - Legs", "type": "Strength" },
+  { "name": "Leg Press - Legs", "type": "Hypertrophy" },
+  { "name": "Shoulder Press - Shoulders", "type": "Strength" },
+  { "name": "Tricep Dips - Arms", "type": "Hypertrophy" },
+  { "name": "Pull-ups - Back", "type": "Strength" },
+  { "name": "Plank - Core", "type": "Resistance" },
+  { "name": "Jump Rope - Full Body", "type": "Cardio" },
+  { "name": "Rowing Machine - Back", "type": "Cardio" },
+  { "name": "Lunges - Legs", "type": "Hypertrophy" },
+  { "name": "Russian Twists - Core", "type": "Resistance" },
+  { "name": "Burpees - Full Body", "type": "Cardio" },
+  { "name": "Cable Fly - Chest", "type": "Hypertrophy" },
+  { "name": "Seated Calf Raise - Calves", "type": "Hypertrophy" },
+  { "name": "Face Pull - Shoulders", "type": "Hypertrophy" },
+  { "name": "Battle Ropes - Arms", "type": "Cardio" },
+  { "name": "Leg Curls - Hamstrings", "type": "Hypertrophy" }
+]

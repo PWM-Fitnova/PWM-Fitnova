@@ -25,7 +25,10 @@
     border-radius: 25px;
 
 
-    background: radial-gradient(at 10% 60%,#082420 30%, #0A4B39);
+    background-image: url("../../Images/dumbbell-1966704_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     color: white;
 
