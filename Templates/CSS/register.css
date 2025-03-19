@@ -158,7 +158,7 @@ footer {
     flex-wrap: wrap;
 }
 
-@media screen and (min-width: 0px) and (max-width: 430px) {
+@media screen and (max-width: 780px) {
     .body_register {
         font-size: 20px;
     }
@@ -188,7 +188,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 430px) and (max-width: 1024px) {
+@media screen and (min-width: 480px) {
     .body_register {
         font-size: 22px;
     }

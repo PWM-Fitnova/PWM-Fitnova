@@ -102,7 +102,6 @@ button:hover, .create_account:hover {
     }
 }
 
-/*
 @media screen and (max-width: 480px) {
     .login-container div {
         width: 100%;
@@ -117,5 +116,3 @@ button:hover, .create_account:hover {
         font-size: 16px;
     }
 }
-
-*/
