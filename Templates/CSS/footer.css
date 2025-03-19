@@ -1,6 +1,17 @@
+.footer-template {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     background-color: #09372C;
+     gap: 40px;
+     flex-wrap: wrap;
+     text-align: center;
+ }
+
 .footer-logo img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: lightgray;
 }
 
@@ -12,7 +23,9 @@
 
 .footer-article {
     display: flex;
-    padding: 2px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
 }
 
 .footer-linked-elements {
@@ -22,19 +35,20 @@
 #footer-tile {
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
 }
 
 .footer-linked-elements ul {
-    font-size: 10px;
+    font-size: 12px;
     list-style: none;
     padding: 0 5px;
     margin: 0;
+    text-align: center;
 }
 
 .footer-list-element {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .footer-link {
@@ -50,11 +64,29 @@
     color: grey;
 }
 
-.footer-template {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 5px 0;
-    background-color: #09372C;
-    gap: 80px;
+@media screen and (max-width: 768px) {
+    .footer-template {
+        flex-direction: column;
+        gap: 30px;
+        padding: 15px;
+    }
+    .footer-article {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-template {
+        flex-direction: initial;
+        gap: 20px;
+        padding: 10px;
+    }
+    .footer-logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-linked-elements ul {
+        font-size: 10px;
+    }
 }
