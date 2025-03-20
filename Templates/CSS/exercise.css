@@ -131,12 +131,10 @@ h2 {
 }
 
 .card-icon {
-  width: 20px;
-  height: 20px;
-  border: 2px solid black;
-  background: white;
+  width: 25px;
+  height: 25px;
   position: absolute;
-  bottom: 10px;
+  bottom: 12px;
   right: 10px;
 }
 
