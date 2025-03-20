@@ -1,6 +1,6 @@
 .recipes-content{
     display: block;
-    flex:1;
+    flex: 1;
     text-align: center;
     background: #071013;
     padding-bottom: 30px;
@@ -23,7 +23,6 @@
     border-radius: 30px;
     background: #09372C;
     border: 2px solid black;
-
 }
 
 .filter-box, .sidebar-item {
@@ -153,6 +152,18 @@ h2 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+@media screen and (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
         flex-direction: row;
@@ -190,8 +201,42 @@ h2 {
     }
 }
 
+@media screen and (min-width: 431px) and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 90%;
+        max-width: 500px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: static;
+    }
+
+    .sidebar-item {
+        flex: 0 1 auto;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .card-image {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
 @media screen and (max-width: 430px) {
-    .exercise-content {
+    .recipes-content {
         padding-bottom: 20px;
     }
 
