@@ -1,36 +1,66 @@
 document.addEventListener("DOMContentLoaded", () => {
-    loadHeaderFooter();
+     loadHeaderFooter().then(r => null);
 })
-
-function loadTemplate(id, url) {
-    fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Fail loading ${url}`);
-            }
-            return response.text();
-        })
-        .then(html => {
-            document.getElementById(id).innerHTML = html;
-        })
-        .catch(error => console.error(error));
+async function loadTemplate(id, url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`Fail loading ${url}`);
+        document.getElementById(id).innerHTML = await response.text();
+    }
+    catch(error) {
+        console.error(error);
+    }
 }
 
-function loadHeaderFooter(){
+async function loadCards(url, templateId){
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`Fail loading`);
+        response.json().then(data => {data.forEach(element => {addTemplate("grid", templateId, element)});})
 
-    loadTemplate("header", "../HTML/header.html");
-    loadTemplate("footer", "../HTML/footer.html");
+    }catch (error) {
+        console.error(error);
+    }
+}
+async function loadData(){
+    const currentPage = document.location.pathname.split("/").pop();
+    currentPage === "recipes.html" ? loadCards("../JsonFiles/recipes.json","exerciseRecipeCard.html") : null;
+    currentPage === "exercises.html" ?  loadCards("../JsonFiles/exercises.json","exerciseRecipeCard.html") : null;
+}
+async function loadHeaderFooter() {
+    await loadTemplate("header", "../HTML/header.html");
+    await loadTemplate("footer", "../HTML/footer.html");
 }
 
-function loadPlanTypes(){
-    loadTemplate("planTypes", "../HTML/planTypes.html");
-}
-
-function loadIndex(){
-        loadTemplate("planTypes", "../HTML/planTypes.html");
-        loadDescription();
+async function loadPlanTypes(){
+    await loadTemplate("planTypes", "../HTML/planTypes.html");
 
 }
+async function loadIndex(){
+        await loadTemplate("planTypes", "../HTML/planTypes.html");
+        await loadDescription();
+}
+
+async function addTemplate(id, url, item) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`Fail loading ${url}`);
+
+        const container = document.getElementById(id)
+        const newElement = document.createElement("div");
+        newElement.innerHTML = await response.text();
+
+        const label = newElement.querySelector(".card-label");
+        const title = newElement.querySelector(".card-title");
+
+        label.textContent = item.type;
+        title.textContent = item.name;
+
+        container.appendChild(newElement);
+
+    }catch(error) {console.log(error);}
+}
+
 
 const loadDescription = () =>{
     fetch("../JsonFiles/indexDescription.json")
@@ -43,42 +73,5 @@ const loadDescription = () =>{
         .then(data => {
             document.getElementsByClassName('main-description')[0].textContent = data.description;
         })
-}
-function loadUserExercises(){
-    fetch("../JsonFiles/exercises.json")
-        .then(response => {
-            if(!response.ok){
-                throw new Error("Failed to load users exercises");
-            }
-            return response.json();
-        })
-        .then(data => {
-            data.forEach(element => {
-                addTemplate("grid", "exerciseRecipeCard.html", element);
-            })
-        })
-}
-function addTemplate(id, url, item) {
-    fetch(url)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Fail loading ${url}`);
-            }
-            return response.text();
-        })
-        .then(html => {
-            const container = document.getElementById(id);
-            const newElement = document.createElement("div");
-            newElement.innerHTML = html;
-
-            const label = newElement.querySelector(".card-label");
-            const title = newElement.querySelector(".card-title");
-
-            label.textContent = item.type;
-            title.textContent = item.name;
-
-            container.appendChild(newElement);
-        })
-        .catch(error => console.error(error));
 }
 

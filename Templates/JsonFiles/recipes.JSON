@@ -1,0 +1,22 @@
+[
+  { "name": "Avocado Toast • Breakfast, High Protein", "type": "Healthy" },
+  { "name": "Oatmeal Pancakes • Breakfast, Low Fat", "type": "Sweet" },
+  { "name": "Grilled Chicken Salad • High Protein", "type": "Healthy" },
+  { "name": "Banana Protein Smoothie • Snack, High Protein", "type": "Quick" },
+  { "name": "Dark Chocolate Energy Balls • Snack", "type": "Sweet" },
+  { "name": "Quinoa & Veggie Bowl • Low Calorie", "type": "Healthy" },
+  { "name": "Peanut Butter & Banana Toast • Breakfast", "type": "Quick" },
+  { "name": "Greek Yogurt Parfait • Snack, High Protein", "type": "Sweet" },
+  { "name": "Salmon & Asparagus • High Protein", "type": "Healthy" },
+  { "name": "Chia Pudding • Breakfast, Low Calorie", "type": "Sweet" },
+  { "name": "Cottage Cheese & Berries • Snack", "type": "Low Calorie" },
+  { "name": "Egg Muffins • Breakfast, High Protein", "type": "Quick" },
+  { "name": "Zucchini Noodles with Pesto • Low Calorie", "type": "Healthy" },
+  { "name": "Protein Brownies • Sweet, High Protein", "type": "Sweet" },
+  { "name": "Tuna Salad Wrap • Quick", "type": "Low Calorie" },
+  { "name": "Almond Butter Rice Cakes • Snack", "type": "Quick" },
+  { "name": "Berry Smoothie Bowl • Breakfast, Low Calorie", "type": "Sweet" },
+  { "name": "Hummus & Veggies • Snack", "type": "Healthy" },
+  { "name": "Grilled Turkey Breast • High Protein", "type": "Healthy" },
+  { "name": "Coconut Protein Bars • Snack, High Protein", "type": "Sweet" }
+]
