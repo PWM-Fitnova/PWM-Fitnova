@@ -64,29 +64,3 @@
     color: grey;
 }
 
-@media screen and (max-width: 768px) {
-    .footer-template {
-        flex-direction: initial;
-        gap: 30px;
-        padding: 205px;
-    }
-    .footer-article {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .footer-template {
-        flex-direction: initial;
-        gap: 20px;
-        padding: 20px;
-    }
-    .footer-logo img {
-        width: 40px;
-        height: 40px;
-    }
-    .footer-linked-elements ul {
-        font-size: 10px;
-    }
-}

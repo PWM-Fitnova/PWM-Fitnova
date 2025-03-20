@@ -5,16 +5,8 @@
 .premium-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #071013;
     gap: 20px;
-    padding: 20px;
-    margin: 30px;
-}
-
-.premium-table {
-    width: 94%;
 
 }
 
@@ -29,6 +21,13 @@
     padding: 15px;
     text-align: center;
     border-bottom: 1px solid #ddd;
+}
+.premium-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
 }
 
 .table-header-item {
