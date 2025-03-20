@@ -30,10 +30,8 @@
 }
 
 .card-icon {
-    width: 20px;
-    height: 20px;
-    border: 2px solid black;
-    background: white;
+    width: 30px;
+    height: 30px;
     position: absolute;
     bottom: 10px;
     right: 10px;
