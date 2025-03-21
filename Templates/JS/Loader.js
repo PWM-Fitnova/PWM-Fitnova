@@ -24,8 +24,8 @@ async function loadCards(url, templateId){
 }
 async function loadData(){
     const currentPage = document.location.pathname.split("/").pop();
-    currentPage === "recipes.html" ? loadCards("../JsonFiles/recipes.json","exerciseRecipeCard.html") : null;
-    currentPage === "exercises.html" ?  loadCards("../JsonFiles/exercises.json","exerciseRecipeCard.html") : null;
+    currentPage === "recipes.html" ? await loadCards("../JsonFiles/recipes.json", "exerciseRecipeCard.html") : null;
+    currentPage === "exercises.html" ?  await loadCards("../JsonFiles/exercises.json", "exerciseRecipeCard.html") : null;
 }
 async function loadHeaderFooter() {
     await loadTemplate("header", "../HTML/header.html");
