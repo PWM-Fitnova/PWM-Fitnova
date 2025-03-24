@@ -8,42 +8,54 @@
     <link rel="stylesheet" href="../CSS/settings.css">
 </head>
 <body>
-    <header id="header"></header>
-        <main class="setting-container">
-            <div class="cont">
-                <label class="mode-label">Dark Mode</label>
-                <input type="checkbox" id="dark-mode" class="mode">
-            </div>
-            <div class="cont">
-                <fieldset>
-                    <legend>Profile</legend>
-                    <label for="public">Public</label>
-                    <input type="radio" id="public" name="profile" value="public">
-                    <label for="private">Private</label>
-                    <input type="radio" id="private" name="profile" value="private">
-                </fieldset>
-            </div>
-            <div class="cont">
-                <fieldset>
-                    <legend>Email notification</legend>
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="yes" name="notify" value="yes">
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="notify" value="no">
-                </fieldset>
-            </div>
-            <div class="cont">
-                <label for="language">Choose your language:</label>
-                <input list="language" name="language" id="langu">
-                <datalist id="language">
-                    <option value="Spanish">
-                    <option value="English ">
-                </datalist>
-            </div>
-            <div class="but">
-                <a href="delete.html" class="delete-button">Delete Account</a>
-            </div>
-        </main>
-    <footer id="footer"></footer>
+<header id="header"></header>
+<main class="setting-container">
+    <div class="cont">
+        <label class="mode-label">Dark Mode</label>
+        <input type="checkbox" id="dark-mode" class="mode">
+    </div>
+    <div class="cont">
+        <fieldset>
+            <legend>Profile</legend>
+            <label for="public">Public</label>
+            <input type="radio" id="public" name="profile" value="public">
+            <label for="private">Private</label>
+            <input type="radio" id="private" name="profile" value="private">
+        </fieldset>
+    </div>
+    <div class="cont">
+        <fieldset>
+            <legend>Email notification</legend>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="notify" value="yes">
+            <label for="no">No</label>
+            <input type="radio" id="no" name="notify" value="no">
+        </fieldset>
+    </div>
+    <div class="cont">
+        <label for="language">Choose your language:</label>
+        <input list="language" name="language" id="langu">
+        <datalist id="language">
+            <option value="Spanish">
+            <option value="English">
+        </datalist>
+    </div>
+    <div class="cont">
+        <fieldset>
+            <legend>Change Password</legend>
+            <label for="old-password">Old Password</label>
+            <input type="password" id="old-password" name="old-password">
+            <label for="new-password">New Password</label>
+            <input type="password" id="new-password" name="new-password">
+            <label for="confirm-password">Confirm New Password</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+            <button type="button" class="change-button">Change</button>
+        </fieldset>
+    </div>
+    <div class="but">
+        <a href="delete.html" class="delete-button">Delete Account</a>
+    </div>
+</main>
+<footer id="footer"></footer>
 </body>
 </html>
