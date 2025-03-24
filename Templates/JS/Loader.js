@@ -46,20 +46,25 @@ async function addTemplate(id, url, item) {
         const response = await fetch(url);
         if (!response.ok) throw new Error(`Fail loading ${url}`);
 
-        const container = document.getElementById(id)
+        const container = document.getElementById(id);
         const newElement = document.createElement("div");
         newElement.innerHTML = await response.text();
 
         const label = newElement.querySelector(".card-label");
         const title = newElement.querySelector(".card-title");
+        const image = newElement.querySelector(".card-image");
 
         label.textContent = item.type;
         title.textContent = item.name;
+        image.style.backgroundImage = `url(${item.image})`;
 
         container.appendChild(newElement);
 
-    }catch(error) {console.log(error);}
+    } catch (error) {
+        console.log(error);
+    }
 }
+
 
 
 const loadDescription = () =>{
