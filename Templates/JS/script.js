@@ -1,25 +1,71 @@
+function showMessage(message, type = 'error') {
+    const messageElement = document.querySelector('#password-message');
 
+    messageElement.classList.remove('message-success', 'message-error', 'message-warning');
 
-function changePassword(buttonId, campId, property, userId, user) {
-    const button = document.querySelector(buttonId);
-    button.addEventListener("click", function () {
-        const inputElement = document.querySelector(campId);
-        const value = inputElement.value;
-        if (property === "password") {
-            const oldPassword = document.querySelector('#oldPassword')?.value;
-            const newPassword = document.querySelector('#newPassword')?.value;
-            const repeatPassword = document.querySelector('#repeatPassword')?.value;
-            if (oldPassword !== user.password) {
-                console.error("Password doesn't match the old one");
-                return;
-            }
-            if (newPassword !== repeatPassword) {
-                console.error("New password doesn't match the confirmation password");
-                return;
-            }
+    messageElement.textContent = message;
+
+    switch(type) {
+        case 'success':
+            messageElement.classList.add('message-success');
+            break;
+        case 'error':
+            messageElement.classList.add('message-error');
+            break;
+        case 'warning':
+            messageElement.classList.add('message-warning');
+            break;
+    }
+}
+
+async function setupPasswordChange() {
+    const userData = await loadUserData();
+    const changeButton = document.querySelector('.change-button');
+
+    changeButton.addEventListener('click', () => {
+        const oldPasswordInput = document.querySelector('#old-password');
+        const newPasswordInput = document.querySelector('#new-password');
+        const confirmPasswordInput = document.querySelector('#confirm-password');
+
+        const oldPassword = oldPasswordInput.value;
+        const newPassword = newPasswordInput.value;
+        const confirmPassword = confirmPasswordInput.value;
+        showMessage('', 'warning');
+
+        if (!oldPassword || !newPassword || !confirmPassword) {
+            showMessage('Todos los campos son obligatorios', 'warning');
+            return;
         }
-        const data = { [property]: value };
-        console.log("Sending update:", data);
-        //sendUpdate(/users/${userId}, data, userId);
+
+        if (oldPassword !== userData.security.password) {
+            showMessage('La contraseña antigua no es correcta', 'error');
+            return;
+        }
+
+        if (newPassword !== confirmPassword) {
+            showMessage('Las nuevas contraseñas no coinciden', 'error');
+            return;
+        }
+
+        if (newPassword.length < 8) {
+            showMessage('La contraseña debe tener al menos 8 caracteres', 'warning');
+            return;
+        }
+
+        showMessage('Contraseña cambiada correctamente', 'success');
+
+        oldPasswordInput.value = '';
+        newPasswordInput.value = '';
+        confirmPasswordInput.value = '';
     });
+}
+
+async function loadUserData(message) {
+    try {
+        const response = await fetch('../JsonFiles/Users.json');
+        return await response.json();
+    } catch (error) {
+        showMessage('Error cargando datos de usuario:');
+        return null;
+    }
 }

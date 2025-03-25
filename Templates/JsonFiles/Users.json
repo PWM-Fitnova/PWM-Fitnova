@@ -1,0 +1,26 @@
+{
+  "id": "user123",
+  "username": "Chris_Bumstead",
+  "email": "chris.bumstead@example.com",
+  "profile": {
+    "firstName": "Chris",
+    "lastName": "Bumstead",
+    "darkMode": false,
+    "language": "Spanish",
+    "profileVisibility": "private",
+    "emailNotifications": false
+  },
+  "security": {
+    "password": "chris1234",
+    "lastPasswordChange": "2024-03-25T10:30:00Z",
+    "twoFactorEnabled": false
+  },
+  "preferences": {
+    "theme": "light",
+    "notifications": {
+      "email": false,
+      "push": true,
+      "sms": false
+    }
+  }
+}

@@ -25,10 +25,38 @@ fieldset {
     padding: 15px;
 }
 
-label {
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+}
+
+.message-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.message-error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+.message-warning {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+    border: 1px solid #faebcc;
+}
+
+.mode-label {
     font-size: 18px;
-    margin-right: 10px;
+    align-content: center;
+    align-items: center;
     padding: 10px 0 0 10px;
+    margin-bottom: 5px;
 }
 
 input[list], input[type="password"] {
@@ -60,8 +88,10 @@ input[list], input[type="password"] {
 
 .delete-button {
     display: block;
-    width: 100%;
+    width: 92%;
     text-align: center;
+    align-items: center;
+    align-content: center;
     padding: 12px;
     margin-top: 20px;
     background-color: #0A5E45;
@@ -71,6 +101,7 @@ input[list], input[type="password"] {
     transition: background 0.3s;
     text-decoration: none;
 }
+
 
 .delete-button:hover {
     background-color: #088A68;
@@ -97,7 +128,7 @@ main.setting-container {
     display: flex;
     flex-direction: column;
     padding: 20px 20px 20px 20px;
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     background: #111111;
     border-radius: 12px;
