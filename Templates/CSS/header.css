@@ -8,12 +8,17 @@
     font-size: 20px;
 }
 
-.left img,
-.right img {
-    height: 40px;
-    width: 40px;
-    background-color: gray;
+.left img {
+    height: 100px;
+    width: 100px;
     padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+}
+.right img {
+    height: 65px;
+    width: 65px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
 }
 
 nav {

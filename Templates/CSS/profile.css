@@ -60,6 +60,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    max-height: 25vh;
+    max-width: 25vw;
+    border-radius: 50%;
 }
 
 .user-profile-img {
