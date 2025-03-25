@@ -20,44 +20,42 @@ function showMessage(message, type = 'error') {
 
 async function setupPasswordChange() {
     const userData = await loadUserData();
-    const changeButton = document.querySelector('.change-button');
 
-    changeButton.addEventListener('click', () => {
-        const oldPasswordInput = document.querySelector('#old-password');
-        const newPasswordInput = document.querySelector('#new-password');
-        const confirmPasswordInput = document.querySelector('#confirm-password');
 
-        const oldPassword = oldPasswordInput.value;
-        const newPassword = newPasswordInput.value;
-        const confirmPassword = confirmPasswordInput.value;
-        showMessage('', 'warning');
+    const oldPasswordInput = document.querySelector('#old-password');
+    const newPasswordInput = document.querySelector('#new-password');
+    const confirmPasswordInput = document.querySelector('#confirm-password');
 
-        if (!oldPassword || !newPassword || !confirmPassword) {
-            showMessage('Todos los campos son obligatorios', 'warning');
-            return;
-        }
+    const oldPassword = oldPasswordInput.value;
+    const newPassword = newPasswordInput.value;
+    const confirmPassword = confirmPasswordInput.value;
+    showMessage('', 'warning');
 
-        if (oldPassword !== userData.security.password) {
-            showMessage('La contraseña antigua no es correcta', 'error');
-            return;
-        }
+    if (oldPassword.length===0 || newPassword.length===0 || confirmPassword.length===0) {
+        showMessage('Todos los campos son obligatorios', 'warning');
+        return;
+    }
 
-        if (newPassword !== confirmPassword) {
-            showMessage('Las nuevas contraseñas no coinciden', 'error');
-            return;
-        }
+    if (oldPassword !== userData.security.password) {
+        showMessage('La contraseña antigua no es correcta', 'error');
+        return;
+    }
 
-        if (newPassword.length < 8) {
-            showMessage('La contraseña debe tener al menos 8 caracteres', 'warning');
-            return;
-        }
+    if (newPassword !== confirmPassword) {
+        showMessage('Las nuevas contraseñas no coinciden', 'error');
+        return;
+    }
 
-        showMessage('Contraseña cambiada correctamente', 'success');
+    if (newPassword.length < 8) {
+        showMessage('La contraseña debe tener al menos 8 caracteres', 'warning');
+        return;
+    }
 
-        oldPasswordInput.value = '';
-        newPasswordInput.value = '';
-        confirmPasswordInput.value = '';
-    });
+    showMessage('Contraseña cambiada correctamente', 'success');
+
+    oldPasswordInput.value = '';
+    newPasswordInput.value = '';
+    confirmPasswordInput.value = '';
 }
 
 async function loadUserData(message) {

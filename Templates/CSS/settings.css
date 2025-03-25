@@ -67,6 +67,8 @@ input[list], input[type="password"] {
     border: 1px solid #555;
     background: #222;
     color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .change-button {
