@@ -34,10 +34,35 @@ async function loadHeaderFooter() {
 
 async function loadPlanTypes(){
     await loadTemplate("planTypes", "../HTML/planTypes.html");
+    fetch("../JsonFiles/PlanTypesCardsInfo.JSON")
+        .then(response => response.json())
+        .then(data => {loadPlanCards(data)})
+
+}
+
+async function loadPlanCards(plansData){
+    const planCards = document.querySelectorAll(".plan-card");
+    console.log(plansData);
+    plansData.forEach((plan, index) => {
+        console.log(index);
+        if (planCards[index]) {
+            planCards[index].querySelector(".card-title").textContent = plan.title;
+            console.log(plan.title)
+            planCards[index].querySelector(".price").textContent = plan.price;
+            const ul = planCards[index].querySelector(".unordered-text-list");
+            plan.features.forEach(feature => {
+                const li = document.createElement("li");
+                li.classList.add("card-text");
+                li.textContent = feature;
+                ul.appendChild(li);
+            });
+        }
+    });
+
 
 }
 async function loadIndex(){
-        await loadTemplate("planTypes", "../HTML/planTypes.html");
+        await loadPlanTypes();
         await loadDescription();
 }
 

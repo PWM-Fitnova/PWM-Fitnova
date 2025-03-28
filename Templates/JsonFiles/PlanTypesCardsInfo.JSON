@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Basic",
+    "price": "$0",
+    "features": [
+      "Acceso a rutinas básicas",
+      "Recetas saludables limitadas",
+      "Registro de progreso manual"
+    ]
+  },
+  {
+    "title": "Standard",
+    "price": "$12",
+    "features": [
+      "Todo lo del Basic",
+      "Más rutinas de entrenamiento",
+      "Más recetas saludables",
+      "Seguimiento automático de progreso",
+      "Comunidad y foros"
+    ]
+  },
+  {
+    "title": "Premium",
+    "price": "$22",
+    "features": [
+      "Todo lo del Standard",
+      "Rutinas personalizadas",
+      "Plan de alimentación personalizado",
+      "Integración con dispositivos",
+      "Consultas con entrenadores"
+    ]
+  }
+]
