@@ -66,11 +66,9 @@ async function setupPasswordChange() {
     try {
         userData.security.password = newPassword;
 
-        localStorage.setItem('userPassword', newPassword);
 
         showMessage('Contraseña cambiada correctamente', 'success');
 
-        // Clear input fields
         oldPasswordInput.value = '';
         newPasswordInput.value = '';
         confirmPasswordInput.value = '';
@@ -86,9 +84,5 @@ async function loadUserData(message) {
     } catch (error) {
         showMessage('Error cargando datos de usuario:', 'error');
         return null;
-    }
-
-    function getStoredPassword() {
-        return localStorage.getItem('userPassword');
     }
 }
