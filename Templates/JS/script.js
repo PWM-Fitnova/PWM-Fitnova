@@ -31,17 +31,17 @@ async function setupPasswordChange() {
     showMessage('', 'warning');
 
     if (oldPassword.length === 0 || newPassword.length === 0 || confirmPassword.length === 0) {
-        showMessage('Todos los campos son obligatorios', 'warning');
+        showMessage('All fields are required', 'warning');
         return;
     }
 
     if (oldPassword !== userData.security.password) {
-        showMessage('La contraseña antigua no es correcta', 'error');
+        showMessage('The old password is incorrect', 'error');
         return;
     }
 
     if (newPassword !== confirmPassword) {
-        showMessage('Las nuevas contraseñas no coinciden', 'error');
+        showMessage('The new passwords do not match', 'error');
         return;
     }
 
@@ -49,40 +49,39 @@ async function setupPasswordChange() {
     const hasNumber = /[0-9]/.test(newPassword);
 
     if (newPassword.length < 8) {
-        showMessage('La contraseña debe tener al menos 8 caracteres', 'warning');
+        showMessage('The password must be at least 8 characters long', 'warning');
         return;
     }
 
     if (!hasUppercase) {
-        showMessage('La contraseña debe contener al menos una letra mayúscula', 'warning');
+        showMessage('The password must contain at least one uppercase letter', 'warning');
         return;
     }
 
     if (!hasNumber) {
-        showMessage('La contraseña debe contener al menos un número', 'warning');
+        showMessage('The password must contain at least one number', 'warning');
         return;
     }
 
     try {
         userData.security.password = newPassword;
 
-
-        showMessage('Contraseña cambiada correctamente', 'success');
+        showMessage('Password changed successfully', 'success');
 
         oldPasswordInput.value = '';
         newPasswordInput.value = '';
         confirmPasswordInput.value = '';
     } catch (error) {
-        showMessage('Error al actualizar la contraseña', 'error');
+        showMessage('Error updating the password', 'error');
     }
 }
 
-async function loadUserData(message) {
+async function loadUserData() {
     try {
         const response = await fetch('../JsonFiles/Users.json');
         return await response.json();
     } catch (error) {
-        showMessage('Error cargando datos de usuario:', 'error');
+        showMessage('Error loading user data', 'error');
         return null;
     }
 }
