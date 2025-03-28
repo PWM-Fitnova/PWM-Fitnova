@@ -21,7 +21,6 @@ function showMessage(message, type = 'error') {
 async function setupPasswordChange() {
     const userData = await loadUserData();
 
-
     const oldPasswordInput = document.querySelector('#old-password');
     const newPasswordInput = document.querySelector('#new-password');
     const confirmPasswordInput = document.querySelector('#confirm-password');
@@ -31,7 +30,7 @@ async function setupPasswordChange() {
     const confirmPassword = confirmPasswordInput.value;
     showMessage('', 'warning');
 
-    if (oldPassword.length===0 || newPassword.length===0 || confirmPassword.length===0) {
+    if (oldPassword.length === 0 || newPassword.length === 0 || confirmPassword.length === 0) {
         showMessage('Todos los campos son obligatorios', 'warning');
         return;
     }
@@ -46,16 +45,38 @@ async function setupPasswordChange() {
         return;
     }
 
+    const hasUppercase = /[A-Z]/.test(newPassword);
+    const hasNumber = /[0-9]/.test(newPassword);
+
     if (newPassword.length < 8) {
         showMessage('La contraseña debe tener al menos 8 caracteres', 'warning');
         return;
     }
 
-    showMessage('Contraseña cambiada correctamente', 'success');
+    if (!hasUppercase) {
+        showMessage('La contraseña debe contener al menos una letra mayúscula', 'warning');
+        return;
+    }
 
-    oldPasswordInput.value = '';
-    newPasswordInput.value = '';
-    confirmPasswordInput.value = '';
+    if (!hasNumber) {
+        showMessage('La contraseña debe contener al menos un número', 'warning');
+        return;
+    }
+
+    try {
+        userData.security.password = newPassword;
+
+        localStorage.setItem('userPassword', newPassword);
+
+        showMessage('Contraseña cambiada correctamente', 'success');
+
+        // Clear input fields
+        oldPasswordInput.value = '';
+        newPasswordInput.value = '';
+        confirmPasswordInput.value = '';
+    } catch (error) {
+        showMessage('Error al actualizar la contraseña', 'error');
+    }
 }
 
 async function loadUserData(message) {
@@ -63,7 +84,11 @@ async function loadUserData(message) {
         const response = await fetch('../JsonFiles/Users.json');
         return await response.json();
     } catch (error) {
-        showMessage('Error cargando datos de usuario:');
+        showMessage('Error cargando datos de usuario:', 'error');
         return null;
+    }
+
+    function getStoredPassword() {
+        return localStorage.getItem('userPassword');
     }
 }

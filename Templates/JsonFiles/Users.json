@@ -11,7 +11,7 @@
     "emailNotifications": false
   },
   "security": {
-    "password": "chris1234",
+    "password": "Chris1234",
     "lastPasswordChange": "2024-03-25T10:30:00Z",
     "twoFactorEnabled": false
   },
