@@ -196,7 +196,6 @@ h2 {
         width: 100%;
         aspect-ratio: 16 / 9;
         background: #ddd;
-        border-bottom: 2px solid black;
     }
 
     .card-title {
